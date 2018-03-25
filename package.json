@@ -1,0 +1,93 @@
+{
+  "name": "JDFinance",
+  "version": "1.0.0",
+  "description": "component with vue 2.5 and es6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open",
+    "build": "webpack --env.production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/imooc/vuejs.git"
+  },
+  "keywords": [
+    "es6",
+    "component"
+  ],
+  "author": "cuc_ygh@163.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/imooc/vuejs/issues"
+  },
+  "eslintConfig": {
+    "root": true,
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "extends": [
+      "mysticatea",
+      "mysticatea/modules",
+      "plugin:vue/recommended"
+    ],
+    "plugins": [
+      "node"
+    ],
+    "env": {
+      "browser": false
+    },
+    "globals": {
+      "applicationCache": false,
+      "atob": false,
+      "btoa": false,
+      "console": false,
+      "document": false,
+      "location": false,
+      "window": false
+    },
+    "rules": {
+      "node/no-extraneous-import": "error",
+      "node/no-missing-import": "error",
+      "node/no-unpublished-import": "error",
+      "vue/html-indent": [
+        "error",
+        4
+      ],
+      "vue/max-attributes-per-line": "off"
+    }
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "webpack.config.js"
+  ],
+  "homepage": "https://gitlab.com/imooc/vuejs#README",
+  "dependencies": {
+    "clean-webpack-plugin": "^0.1.17",
+    "css-hot-loader": "^1.3.4",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "px2rem-loader": "^0.1.7",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "vue": "^2.5.9",
+    "vue-awesome-swiper": "^3.1.3",
+    "vue-loader": "^13.5.0",
+    "vue-router": "^3.0.1",
+    "vue-style-loader": "^3.0.3",
+    "vue-template-compiler": "^2.5.9",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.5",
+    "write-file-webpack-plugin": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.0",
+    "eslint-config-mysticatea": "^12.0.0",
+    "eslint-plugin-vue": "^4.0.0-beta.2",
+    "vue-eslint-parser": "^2.0.1-beta.2"
+  }
+}
