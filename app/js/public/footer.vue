@@ -1,5 +1,5 @@
 <template>
-  <Panel :class="$style.panel" title="公司信息">
+  <Panel :class="[$style.panel, cname]" title="公司信息">
     <ul :class="$style.content">
       <li>
         <img src="//img12.360buyimg.com/jrpmobile/jfs/t2842/350/3035567089/14791/5f6ff93d/577cf395N31e76288.png?width=1125&height=252">
@@ -39,6 +39,12 @@ import Panel from "../core/panel";
 export default {
   components: {
     Panel
+  },
+  props: {
+    cname: {
+      type: String,
+      default: " "
+    }
   }
 };
 </script>
@@ -58,14 +64,14 @@ export default {
       width: 100%;
       text-align: center;
       color: #999;
-     
+
       > img {
         width: 100%;
         height: 143px;
       }
       &:nth-child(2) {
         @include flex(row);
-        box-sizing: border-box;  
+        box-sizing: border-box;
         height: 186px;
         padding-top: 20px;
         > div {
@@ -87,10 +93,10 @@ export default {
           }
         }
       }
-      &:nth-child(n+3){
+      &:nth-child(n + 3) {
         padding: 24px 0;
         height: 38px;
-        line-height:38px;
+        line-height: 38px;
         border: 1px solid #ddd;
         font-size: 24px;
       }
