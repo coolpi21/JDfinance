@@ -18,7 +18,7 @@
         </router-link>
       </li>
       <li>
-        <router-link :to="{name: 'home'}">
+        <router-link :to="{name: 'ious'}">
           <img src="//img12.360buyimg.com/jrpmobile/jfs/t3343/179/621044750/1484/5af6b11a/580f50e4N005181d0.png?width=66&height=66" alt="">
           <p>
             白条
@@ -26,7 +26,7 @@
         </router-link>
       </li>
       <li>
-        <router-link :to="{name: 'home'}">
+        <router-link :to="{name: 'raise'}">
           <img src="//img12.360buyimg.com/jrpmobile/jfs/t3604/98/635506544/2317/443d3a51/580f240aNbee3dcc4.png?width=66&height=66" alt="">
           <p>
             众筹
