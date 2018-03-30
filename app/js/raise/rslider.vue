@@ -33,10 +33,6 @@ export default {
 <style lang="scss">
 .swiper-container-vertical {
   height: 72px;
-  .swiper-slide {
-    em {
-    }
-  }
 }
 </style>
 <style lang="scss" module>
@@ -55,7 +51,6 @@ export default {
     height: 72px;
     line-height: 72px;
     .slider {
-      
       font-size: 26px;
       color: #333;
       .item {
