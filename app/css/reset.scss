@@ -49,3 +49,9 @@ hr {
     background-color: #000;
     height: 1px
 }
+
+.router-link-exact-active {
+    p{
+        color: #f00 !important;
+    }
+}
